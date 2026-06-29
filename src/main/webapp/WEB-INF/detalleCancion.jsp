@@ -19,6 +19,11 @@ prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
       <p>Genero: ${cancion.genero}</p>
       <p>Idioma: ${cancion.idioma}</p>
     </div>
+
+    <form action="/canciones/procesa/eliminar/${cancion.id}" method="post">
+      <input type="hidden" name="_method" value="delete"/>
+      <button class="btn-eliminar" type="submit">Eliminar</button>
+    </form>
     <a class="btn-editar" href="/canciones/formulario/editar/${cancion.id}">Editar Canción</a>
 
     <a href="/canciones">Volver a la lista de canciones</a>

@@ -29,4 +29,8 @@ public class ServicioCanciones {
     return repoCanciones.save(cancion);
   }
 
+  public void eliminaCancion(Long id) {
+    this.repoCanciones.deleteById(id);
+  }
+
 }
