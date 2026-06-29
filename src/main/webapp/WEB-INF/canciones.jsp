@@ -8,6 +8,7 @@ prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tabla de canciones</title>
+  <link rel="stylesheet" href="/css/styletable.css">
 </head>
 <body>
   <h1>Lista de canciones</h1>
@@ -32,5 +33,8 @@ prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 </tbody>
 
   </table>
+  <div style="text-align:center;">
+    <a href="/canciones/formulario/agregar" class="btn-agregar">+ Agregar Canción</a>
+</div>
 </body>
 </html>
