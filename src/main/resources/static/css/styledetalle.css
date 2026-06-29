@@ -29,13 +29,29 @@ body {
         color: #222;
     }
 
+    .btn-editar {
+        display: inline-block; 
+        margin-top: 15px;
+        margin-left: 670px; 
+        padding: 8px 15px;
+        background: #007BFF;
+        color: white;
+        border-radius: 4px; 
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .btn-editar:hover {
+        background: #0056b3;
+    }
+
     a {
         display: block;
-        text-align: center;
-        margin-top: 20px;
+        margin-top: 10px;
         text-decoration: none;
         color: #007BFF;
         font-weight: bold;
+        text-align: center;
     }
 
     a:hover {

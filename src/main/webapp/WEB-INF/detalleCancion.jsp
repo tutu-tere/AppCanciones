@@ -19,6 +19,8 @@ prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
       <p>Genero: ${cancion.genero}</p>
       <p>Idioma: ${cancion.idioma}</p>
     </div>
+    <a class="btn-editar" href="/canciones/formulario/editar/${cancion.id}">Editar Canción</a>
+
     <a href="/canciones">Volver a la lista de canciones</a>
   </body>
 </html>

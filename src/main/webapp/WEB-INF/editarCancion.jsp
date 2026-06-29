@@ -8,15 +8,14 @@ uri="http://www.springframework.org/tags/form" %>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulario</title>
-    <link rel="stylesheet" href="/css/styleform.css" />
+    <title>Editar Canción</title>
+    <link rel="stylesheet" href="/css/styleedit.css" />
   </head>
   <body>
-    <h1>Agrega tú canción</h1>
-
-    <div class="form-agregar">
+    <h2>Editar Canción</h2>
+    <div class="contenedor-form">
       <form:form
-        action="/canciones/procesa/agregar"
+        action="/canciones/procesa/editar/${cancion.id}"
         method="post"
         modelAttribute="cancion"
       >
@@ -51,12 +50,11 @@ uri="http://www.springframework.org/tags/form" %>
         </div>
 
         <div>
-          <input type="submit" value="Guardar Canción" />
+          <input type="submit" value="Actualizar Canción" />
         </div>
       </form:form>
     </div>
 
-    <br />
-    <a href="/canciones">Volver al listado</a>
+    <a href="/canciones">Volver a lista de canciones</a>
   </body>
 </html>
