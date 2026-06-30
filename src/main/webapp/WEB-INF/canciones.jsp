@@ -24,7 +24,7 @@ prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     <c:forEach var = "cancion" items="${listaCanciones}">
       <tr>
         <td>${cancion.titulo}</td>
-        <td>${cancion.artista}</td>
+        <td>${cancion.artista.nombre} ${cancion.artista.apellido}</td>
         <td>
           <a href="/canciones/detalle/${cancion.id}">Detalle</a>
         </td>
@@ -36,5 +36,7 @@ prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
   <div style="text-align:center;">
     <a href="/canciones/formulario/agregar" class="btn-agregar">+ Agregar Canción</a>
 </div>
+<br>
+<a href="/artistas">Ir a artistas</a>
 </body>
 </html>
